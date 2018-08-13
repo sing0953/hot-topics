@@ -1,0 +1,206 @@
+@import url(meyer-reset.css);
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Scheherazade');
+
+/*Fonts*/
+
+/*
+font-family: 'Scheherazade', serif;
+font-family: 'Quattrocento Sans', sans-serif;
+*/
+
+/*Global Styles*/
+
+* {
+    box-sizing: border-box;
+    border: 1px dotted;
+}
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Scheherazade', serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /*    align-items: center;*/
+    color: #8c5b98;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a {
+    padding: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 2px solid #bb7acc;
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+figure,
+figcaption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 100%;
+
+}
+
+figure img {
+    width: 400px;
+    height: auto;
+
+}
+
+figure {
+    width: 40%;
+    float: left;
+}
+
+
+.logo {
+    height: 40px;
+    border: 0px;
+    align-self: center;
+    margin: 2px 0 0 0;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #c111ef;
+}
+
+p {
+    text-align: left;
+    padding: 10px;
+
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #bf92e9;
+}
+
+.copy {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+    display: flex;
+    align-self: center;
+    width: 350px;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 35rem) {
+    p {
+        line-height: 1.4;
+        font-size: 0.75rem;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        display: inline-flex;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    figure,
+    figcaption {
+        width: 100%;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (min-width: 35rem) and (max-width: 80rem) {
+    p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    #portfolio {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-img {
+        width: 40%;
+        float: left;
+        margin: 20px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 80rem) {
+
+    p {
+        font-size: 1.25rem;
+    }
+    .desktop-view {}
+
+    figure {
+        width: 40%;
+    }
+
+    #portfolio {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10px;
+    }
+
+    .desktop-para {
+        width: 60%;
+        float: right;
+    }
+
+
+
+
+}
