@@ -46,13 +46,11 @@ nav a {
     text-transform: uppercase;
     border: 2px solid #bb7acc;
     display: inline-flex;
+    color: #bb7acc;
     text-decoration: none;
     justify-content: space-around;
 }
 
-a{
-    color:color: #bb7acc;
-}
 
 h1 {
     font-size: 3rem;
@@ -117,6 +115,7 @@ footer {
     display: flex;
     align-self: center;
     width: 350px;
+    color: #bb7acc;
     justify-content: space-around;
 }
 
